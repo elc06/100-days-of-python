@@ -1,0 +1,30 @@
+def odd_or_even(number):
+    if number % 2 == 0: ##Fix the = to == so that the if-else statement can run.
+        return "This is an even number."
+    else:
+        return "This is an odd number."
+    
+
+def is_leap(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0: ##Fix the 4000 to 400
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+    
+# Target is the number up to which we count
+def fizz_buzz(target):
+    for number in range(1, target + 1):
+        if number % 3 == 0 and number % 5 == 0: ##Fix the operator 'or' to 'and'
+            print("FizzBuzz")
+        elif number % 3 == 0:
+            print("Fizz")
+        elif number % 5 == 0:
+            print("Buzz")
+        else:
+            print(number) ##Fix the bracket typo
